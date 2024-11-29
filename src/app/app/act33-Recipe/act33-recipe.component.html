@@ -1,0 +1,17 @@
+<div class="header">RARE FOODIE</div>
+<div class="food container">
+    <div class="foodcontainer" *ngFor="let recipe of recipe">
+        <div class="foodimg">
+            <img [src]="recipe.img" alt="">
+        </div>
+    
+        <div class="foodinfo">
+            <h3 class="foodtitle">{{ recipe.name }}</h3>
+            <p class="fooddescription">{{ recipe.details }}</p>
+            <div class="button-container">
+                <button class="btn add-to-cart">See Recipe</button>
+                <button class="btn buy-now">Ingredients</button>
+            </div>
+        </div>
+    </div>
+</div>
